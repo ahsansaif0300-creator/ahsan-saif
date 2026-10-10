@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahsan Saif — AI SaaS Builder & Business Automation | Lahore</title>
+<meta name="description" content="Ahsan Saif, 27, from Lahore. Building AI-based SaaS products and helping businesses automate their daily manpower workload. In IT since 2016.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23070b14'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2322d3ee' font-family='Arial' font-weight='bold'>AS</text></svg>">
+<style>
+:root{
+  --bg:#070b14; --bg2:#0b1120; --card:rgba(255,255,255,.035);
+  --border:rgba(255,255,255,.09); --text:#eef2ff; --muted:#9aa4c0;
+  --cyan:#22d3ee; --violet:#8b5cf6; --amber:#fbbf24;
+  --grad:linear-gradient(120deg,var(--cyan),var(--violet));
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+h1,h2,h3,.sg{font-family:'Space Grotesk',sans-serif;line-height:1.15}
+::selection{background:rgba(34,211,238,.28)}
+.bg-fx{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);opacity:.28}
+.orb.a{width:520px;height:520px;background:#1d4ed8;top:-160px;left:-140px}
+.orb.b{width:460px;height:460px;background:#7c3aed;top:32%;right:-160px}
+.orb.c{width:420px;height:420px;background:#0e7490;bottom:-160px;left:30%}
+.grid-fx{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 90% 70% at 50% 0%,#000 30%,transparent 75%)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(7,11,20,.72);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1140px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;letter-spacing:.5px;text-decoration:none;color:var(--text)}
+.brand span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 24px;border-radius:12px;font-weight:600;font-size:.95rem;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-grad{background:var(--grad);color:#04121a;box-shadow:0 8px 28px rgba(56,189,248,.28)}
+.btn-ghost{background:rgba(255,255,255,.05);color:var(--text);border-color:var(--border)}
+.btn-ghost:hover{border-color:rgba(34,211,238,.5)}
+.btn-sm{padding:9px 18px;font-size:.88rem}
+/* hero */
+.hero{padding:150px 0 90px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.82rem;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--cyan);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.28);padding:8px 16px;border-radius:999px;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 10px #34d399;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.45}}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);font-weight:700;margin-bottom:8px}
+.hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);font-weight:500;margin-bottom:20px}
+.lede{font-size:1.06rem;color:#c6cde4;max-width:34rem;margin-bottom:30px}
+.lede strong{color:var(--text)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:34rem}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 10px;text-align:center}
+.stat b{display:block;font-family:'Space Grotesk';font-size:1.25rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.78rem;color:var(--muted)}
+.photo-card{position:relative;justify-self:center;width:min(380px,100%)}
+.photo-frame{border-radius:26px;overflow:hidden;border:1px solid var(--border);box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 1px rgba(34,211,238,.12),0 0 90px rgba(139,92,246,.14);aspect-ratio:3/4;background:var(--bg2)}
+.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.float-badge{position:absolute;background:rgba(11,17,32,.92);border:1px solid var(--border);backdrop-filter:blur(8px);border-radius:14px;padding:10px 16px;font-size:.85rem;font-weight:600;box-shadow:0 12px 32px rgba(0,0,0,.45);display:flex;align-items:center;gap:9px}
+.fb1{top:26px;left:-34px;animation:float 5s ease-in-out infinite}
+.fb2{bottom:34px;right:-26px;animation:float 6s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translateY(-10px)}}
+/* sections */
+section{padding:84px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:12px}
+.sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:14px}
+.sec-head p{color:var(--muted);font-size:1.03rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px 26px;transition:transform .22s,border-color .22s,box-shadow .22s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);border-color:rgba(34,211,238,.35);box-shadow:0 18px 50px rgba(0,0,0,.4)}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:0;transition:opacity .22s}
+.card:hover::before{opacity:1}
+.icon{width:52px;height:52px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.25)}
+.card h3{font-size:1.12rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.94rem}
+/* about */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about-photo{border-radius:22px;overflow:hidden;border:1px solid var(--border);aspect-ratio:4/5;box-shadow:0 24px 70px rgba(0,0,0,.5)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:top}
+.about-copy p{color:#c6cde4;margin-bottom:16px;font-size:1.02rem}
+.about-copy p strong{color:var(--text)}
+.traits{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.trait{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.trait b{display:block;font-family:'Space Grotesk';margin-bottom:6px;font-size:.98rem}
+.trait b i{font-style:normal;margin-right:8px}
+.trait span{color:var(--muted);font-size:.88rem}
+/* timeline */
+.timeline{position:relative;max-width:760px;margin:0 auto;padding-left:34px}
+.timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--violet),transparent)}
+.tl-item{position:relative;margin-bottom:36px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px}
+.tl-item::before{content:'';position:absolute;left:-32px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 5px rgba(34,211,238,.14)}
+.tl-year{font-family:'Space Grotesk';font-weight:700;font-size:.85rem;letter-spacing:1.5px;color:var(--cyan);text-transform:uppercase;margin-bottom:6px}
+.tl-item h3{margin-bottom:6px;font-size:1.05rem}
+.tl-item p{color:var(--muted);font-size:.93rem}
+/* aims */
+.aims-banner{background:linear-gradient(135deg,rgba(34,211,238,.1),rgba(139,92,246,.1));border:1px solid var(--border);border-radius:26px;padding:52px 48px;text-align:center;margin-bottom:28px;position:relative;overflow:hidden}
+.aims-banner::before{content:'“';position:absolute;top:6px;left:30px;font-size:7rem;font-family:Georgia,serif;color:rgba(255,255,255,.05)}
+.aims-banner p{font-family:'Space Grotesk';font-size:clamp(1.3rem,2.8vw,1.9rem);font-weight:600;max-width:46rem;margin:0 auto}
+.aims-banner p em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* contact */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contact-card{display:block;text-decoration:none;color:var(--text);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:34px 28px;transition:transform .22s,border-color .22s;text-align:center}
+.contact-card:hover{transform:translateY(-6px);border-color:rgba(34,211,238,.4)}
+.contact-card .icon{margin:0 auto 16px}
+.contact-card h3{margin-bottom:6px}
+.contact-card p{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+.contact-card .go{font-weight:600;font-size:.9rem;color:var(--cyan)}
+.big-cta{text-align:center;margin-top:44px;background:var(--card);border:1px solid var(--border);border-radius:24px;padding:48px 32px}
+.big-cta h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:12px}
+.big-cta p{color:var(--muted);margin-bottom:26px;max-width:34rem;margin-left:auto;margin-right:auto}
+footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:.88rem}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+/* whatsapp float */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:transform .2s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+  .hero-grid,.about-grid{grid-template-columns:1fr}
+  .hero{padding-top:120px}
+  .photo-card{order:-1;width:min(300px,80%)}
+  .fb1{left:-8px}.fb2{right:-8px}
+  .cards,.contact-grid{grid-template-columns:1fr}
+  .traits{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .nav-links a:not(.btn){display:none}
+  .aims-banner{padding:38px 24px}
+}
+</style>
+</head>
+<body>
+<div class="bg-fx"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div><div class="grid-fx"></div></div>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#top">Ahsan<span>Saif</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#journey">Journey</a>
+      <a href="#aims">Aims</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-grad btn-sm" href="https://wa.me/923034438788?text=Hi%20Ahsan%2C%20I%20found%20your%20website%20and%20want%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">WhatsApp Me</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow rv"><span class="dot"></span> Lahore, Pakistan · Open to projects</div>
+      <h1 class="rv">Hi, I'm <span class="hl">Ahsan Saif</span></h1>
+      <div class="role rv">AI SaaS Builder · Business Automation Consultant</div>
+      <p class="lede rv">I'm 27, I've been working in <strong>IT since 2016</strong>, and I love one thing above all: <strong>building AI-based SaaS products</strong> and helping businesses <strong>automate their daily manpower workload</strong> — so the work gets done with software, not headcount.</p>
+      <div class="hero-cta rv">
+        <a class="btn btn-grad" href="https://wa.me/923034438788?text=Hi%20Ahsan%2C%20I%20found%20your%20website%20and%20want%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/imahsansaif/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+      <div class="stats rv">
+        <div class="stat"><b>10+</b><span>Years in IT</span></div>
+        <div class="stat"><b>AI-first</b><span>SaaS Builder</span></div>
+        <div class="stat"><b>Zero</b><span>Manpower Mindset</span></div>
+        <div class="stat"><b>Lahore</b><span>Working Worldwide</span></div>
+      </div>
+    </div>
+    <div class="photo-card rv">
+      <div class="photo-frame"><img src="profile.jpg" alt="Ahsan Saif"></div>
+      <div class="float-badge fb1">🤖 AI SaaS Builder</div>
+      <div class="float-badge fb2">⚙️ Automation Expert</div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo rv"><img src="profile.jpg" alt="Ahsan Saif at work"></div>
+      <div class="about-copy">
+        <div class="sec-head rv" style="margin-bottom:24px">
+          <div class="kicker">About me</div>
+          <h2>The short version</h2>
+        </div>
+        <p class="rv">I'm <strong>Ahsan Saif</strong>, 27, from <strong>Lahore, Pakistan</strong>. I've been in the IT field since <strong>2016</strong> — a full decade of building, shipping, and learning what actually works on the real internet.</p>
+        <p class="rv">Somewhere along the way I fell in love with <strong>artificial intelligence</strong> — not as a buzzword, but as a tool. Today I design and build <strong>AI-based SaaS products for businesses</strong>, and I help companies <strong>automate the daily operational workload</strong> that used to need manpower. If a task is repetitive, predictable, or eats hours every day — I want software doing it.</p>
+        <p class="rv">I also carry a specialty most developers don't: <strong>Google AdSense approval expertise</strong> — getting websites properly set up and approved for monetization.</p>
+        <div class="traits">
+          <div class="trait rv"><b><i>🎯</i>Straight talk</b><span>I'll tell you what will work and what won't — before you spend money on it.</span></div>
+          <div class="trait rv"><b><i>✅</i>Proof, not promises</b><span>I verify things live. If it's not working on the real site, it's not done.</span></div>
+          <div class="trait rv"><b><i>🚀</i>Fast execution</b><span>I move quickly from idea to something you can actually use and test.</span></div>
+          <div class="trait rv"><b><i>🤝</i>Full ownership</b><span>Hand me the goal — I handle everything until it's shipped and running.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:rgba(255,255,255,.014)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker">What I do</div>
+      <h2>Services built around one idea:<br>less manpower, more software.</h2>
+      <p>Everything I offer points the same direction — using AI and smart systems to take workload off people's shoulders.</p>
+    </div>
+    <div class="cards">
+      <div class="card rv"><div class="icon">🧠</div><h3>AI SaaS Product Development</h3><p>Custom AI-powered SaaS products designed around your real business workflow — from idea to a live product your team actually uses.</p></div>
+      <div class="card rv"><div class="icon">⚙️</div><h3>Business Process Automation</h3><p>I automate the daily operational workload — orders, follow-ups, data entry, reporting — so it runs with software instead of manpower.</p></div>
+      <div class="card rv"><div class="icon">💬</div><h3>AI Chatbots & Support Agents</h3><p>Intelligent agents that answer customers, handle support conversations, and work 24/7 without breaks, salaries, or sick days.</p></div>
+      <div class="card rv"><div class="icon">🛍️</div><h3>E-commerce Development</h3><p>Full online stores — TikTok Shop-style storefronts, merchant dashboards, order management, and payment-ready systems.</p></div>
+      <div class="card rv"><div class="icon">💻</div><h3>Web Development & Deployment</h3><p>A decade of full-stack web experience: modern websites and apps, built clean and deployed to production properly.</p></div>
+      <div class="card rv"><div class="icon">💰</div><h3>AdSense Approval Expertise</h3><p>Getting websites approved for Google AdSense — policy-compliant setup, content readiness, and the fixes that get rejections overturned.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker">Journey</div>
+      <h2>A decade in IT, now all-in on AI</h2>
+      <p>2016 → today: from learning the craft of the web to building AI products that replace manpower.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item rv"><div class="tl-year">2016</div><h3>Entered the IT field</h3><p>Started working in IT — learning how the web works, how software gets built, and how online business actually runs.</p></div>
+      <div class="tl-item rv"><div class="tl-year">2016 — 2022</div><h3>Web development & online business</h3><p>Years deep in websites, e-commerce, and shipping real products online — learning what separates things that work from things that don't.</p></div>
+      <div class="tl-item rv"><div class="tl-year">2023 — 2025</div><h3>The AI turn</h3><p>Fell in love with artificial intelligence. Chatbots, AI agents, and automation became the core focus — and the most fun work yet.</p></div>
+      <div class="tl-item rv"><div class="tl-year">2026 — Now</div><h3>AI SaaS products & automation</h3><p>Building AI-based SaaS products for businesses and automating daily manpower workload — the mission I'm on today.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="aims" style="background:rgba(255,255,255,.014)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker">My aims</div>
+      <h2>What I'm working toward</h2>
+    </div>
+    <div class="aims-banner rv">
+      <p>A business should run its daily operations with <em>software doing the heavy lifting</em> — not rooms full of manpower.</p>
+    </div>
+    <div class="cards">
+      <div class="card rv"><div class="icon">🔁</div><h3>Automate the repetitive</h3><p>Every repetitive daily task in a business is a candidate for automation. My aim is to find them and eliminate them with AI.</p></div>
+      <div class="card rv"><div class="icon">🌍</div><h3>AI for real businesses</h3><p>Not AI for tech giants — practical, affordable AI that normal businesses in Pakistan and beyond can actually use and benefit from.</p></div>
+      <div class="card rv"><div class="icon">🌙</div><h3>Products that work while you sleep</h3><p>Building SaaS products that keep working 24/7 — taking orders, answering customers, and moving work forward around the clock.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker">Contact</div>
+      <h2>Let's talk about your project</h2>
+      <p>Fastest way to reach me is WhatsApp — I reply quickly. Tell me what you're trying to automate or build.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card rv" href="https://wa.me/923034438788?text=Hi%20Ahsan%2C%20I%20found%20your%20website%20and%20want%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">
+        <div class="icon">💬</div><h3>WhatsApp</h3><p>+92 303 4438788<br>Fastest response</p><span class="go">Start a chat →</span>
+      </a>
+      <a class="contact-card rv" href="https://www.linkedin.com/in/imahsansaif/" target="_blank" rel="noopener">
+        <div class="icon">💼</div><h3>LinkedIn</h3><p>/in/imahsansaif<br>Professional profile</p><span class="go">Connect →</span>
+      </a>
+      <a class="contact-card rv" href="https://www.facebook.com/imahsansaif" target="_blank" rel="noopener">
+        <div class="icon">📘</div><h3>Facebook</h3><p>/imahsansaif<br>Follow & message</p><span class="go">Visit →</span>
+      </a>
+    </div>
+    <div class="big-cta rv">
+      <h2>Have repetitive work eating your team's day?</h2>
+      <p>Message me. I'll tell you honestly whether AI can automate it — and if it can, I'll build it.</p>
+      <a class="btn btn-grad" href="https://wa.me/923034438788?text=Hi%20Ahsan%2C%20I%20have%20work%20I%20want%20to%20automate.%20Can%20we%20talk%3F" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>© 2026 Ahsan Saif · Lahore, Pakistan</span>
+    <span>AI SaaS · Automation · Web</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923034438788?text=Hi%20Ahsan%2C%20I%20found%20your%20website%20and%20want%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.8 31.2l7.8-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.6c-2.3 0-4.6-.6-6.5-1.8l-.5-.3-4.6 1.2 1.2-4.5-.3-.5c-1.3-2-2-4.4-2-6.9C3.3 9.1 8.9 3.5 16 3.5S28.7 9.1 28.7 16 23.1 28.4 16 28.4zm7-9.3c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.6-.2-.9.2-.3.4-1 1.2-1.2 1.5-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 3.9 6.2 5.5 3.1 1.4 3.8 1.1 4.5 1 .7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5z"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
