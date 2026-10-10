@@ -114,6 +114,12 @@ section{padding:84px 0}
 .big-cta{text-align:center;margin-top:44px;background:var(--card);border:1px solid var(--border);border-radius:24px;padding:48px 32px}
 .big-cta h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:12px}
 .big-cta p{color:var(--muted);margin-bottom:26px;max-width:34rem;margin-left:auto;margin-right:auto}
+/* showcase */
+.showcase{padding:20px 0 0}
+.showcase-frame{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--border);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.showcase-frame img{width:100%;display:block;aspect-ratio:16/8;object-fit:cover}
+.showcase-frame figcaption{position:absolute;left:0;right:0;bottom:0;padding:64px 40px 34px;background:linear-gradient(transparent,rgba(4,7,14,.88));font-family:'Space Grotesk';font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:600}
+.showcase-frame figcaption span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:.88rem}
 .foot-in{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
 /* whatsapp float */
@@ -172,7 +178,7 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
       </div>
     </div>
     <div class="photo-card rv">
-      <div class="photo-frame"><img src="profile.jpg" alt="Ahsan Saif"></div>
+      <div class="photo-frame"><img src="hero.jpg" alt="Ahsan Saif — AI SaaS Builder"></div>
       <div class="float-badge fb1">🤖 AI SaaS Builder</div>
       <div class="float-badge fb2">⚙️ Automation Expert</div>
     </div>
@@ -182,7 +188,7 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
 <section id="about">
   <div class="wrap">
     <div class="about-grid">
-      <div class="about-photo rv"><img src="profile.jpg" alt="Ahsan Saif at work"></div>
+      <div class="about-photo rv"><img src="about.jpg" alt="Ahsan Saif"></div>
       <div class="about-copy">
         <div class="sec-head rv" style="margin-bottom:24px">
           <div class="kicker">About me</div>
@@ -233,6 +239,15 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
       <div class="tl-item rv"><div class="tl-year">2023 — 2025</div><h3>The AI turn</h3><p>Fell in love with artificial intelligence. Chatbots, AI agents, and automation became the core focus — and the most fun work yet.</p></div>
       <div class="tl-item rv"><div class="tl-year">2026 — Now</div><h3>AI SaaS products & automation</h3><p>Building AI-based SaaS products for businesses and automating daily manpower workload — the mission I'm on today.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="wrap">
+    <figure class="showcase-frame rv">
+      <img src="work.jpg" alt="Ahsan Saif at work, building AI products">
+      <figcaption><span>Every single day:</span> building, shipping, automating.</figcaption>
+    </figure>
   </div>
 </section>
 
