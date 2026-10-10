@@ -91,7 +91,13 @@ section{padding:84px 0}
 .trait b i{font-style:normal;margin-right:8px}
 .trait span{color:var(--muted);font-size:.88rem}
 /* timeline */
-.timeline{position:relative;max-width:760px;margin:0 auto;padding-left:34px}
+.journey-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:52px;align-items:start}
+.journey-side{position:sticky;top:96px}
+.journey-photo{border-radius:22px;overflow:hidden;border:1px solid var(--border);box-shadow:0 24px 70px rgba(0,0,0,.5);margin:0;background:var(--bg2)}
+.journey-photo img{width:100%;display:block;aspect-ratio:4/4.4;object-fit:cover}
+.journey-photo figcaption{padding:18px 22px;font-size:.92rem;color:var(--muted)}
+.journey-photo figcaption span{color:var(--cyan);font-weight:700}
+.timeline{position:relative;max-width:760px;margin:0;padding-left:34px}
 .timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--violet),transparent)}
 .tl-item{position:relative;margin-bottom:36px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px}
 .tl-item::before{content:'';position:absolute;left:-32px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 5px rgba(34,211,238,.14)}
@@ -135,6 +141,8 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
   .photo-card{order:-1;width:min(300px,80%)}
   .fb1{left:-8px}.fb2{right:-8px}
   .cards,.contact-grid{grid-template-columns:1fr}
+  .journey-grid{grid-template-columns:1fr}
+  .journey-side{position:static;max-width:520px}
   .traits{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
   .nav-links a:not(.btn){display:none}
@@ -233,11 +241,19 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
       <h2>A decade in IT, now all-in on AI</h2>
       <p>2016 → today: from learning the craft of the web to building AI products that replace manpower.</p>
     </div>
+    <div class="journey-grid">
     <div class="timeline">
       <div class="tl-item rv"><div class="tl-year">2016</div><h3>Entered the IT field</h3><p>Started working in IT — learning how the web works, how software gets built, and how online business actually runs.</p></div>
       <div class="tl-item rv"><div class="tl-year">2016 — 2022</div><h3>Web development & online business</h3><p>Years deep in websites, e-commerce, and shipping real products online — learning what separates things that work from things that don't.</p></div>
       <div class="tl-item rv"><div class="tl-year">2023 — 2025</div><h3>The AI turn</h3><p>Fell in love with artificial intelligence. Chatbots, AI agents, and automation became the core focus — and the most fun work yet.</p></div>
       <div class="tl-item rv"><div class="tl-year">2026 — Now</div><h3>AI SaaS products & automation</h3><p>Building AI-based SaaS products for businesses and automating daily manpower workload — the mission I'm on today.</p></div>
+    </div>
+    <aside class="journey-side rv">
+      <figure class="journey-photo">
+        <img src="journey.jpg" alt="Ahsan Saif at work">
+        <figcaption><span>2026 — now:</span> in the flow, building AI that replaces manpower.</figcaption>
+      </figure>
+    </aside>
     </div>
   </div>
 </section>
